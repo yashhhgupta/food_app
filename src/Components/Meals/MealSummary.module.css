@@ -1,0 +1,43 @@
+.summary {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    position: relative;
+    margin-top: 1em;
+    background-color: #BBA5B0;
+    /* background-color: rgba(210, 139, 177, .35); */
+    color: #220001;
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.7);
+}
+
+.summary h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.body{
+    /* color : black; */
+    font-weight: bold;
+    background-color: #42032C;
+    color: white;
+    border-radius: 14px;
+    padding: 0.5rem;
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.12);
+    /* background-color: rgba(53, 48, 71, .25); */
+}
+
+.carousel {
+    margin-top: 50px;
+}
+
+.carousel-inner {
+    height: 100px;
+}
+
+.carousel-caption {
+    color: #fff;
+    top: 50%;
+}
+
