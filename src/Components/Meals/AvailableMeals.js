@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 
 const AvailableMeals =()=>{
   const [meals, setmeals] = useState([]);
+  const priceArray = [123.45, 34.56, 305.67, 46.78, 67.89, 67.90,230.56,90.78,100.56,89.08,65.89];
 
   const fetchData = () => {
     return fetch("https://www.themealdb.com/api/json/v1/1/filter.php?a=Indian")
@@ -15,11 +16,14 @@ const AvailableMeals =()=>{
     fetchData();
   }, []);
   console.log(meals);
+  let k=0;
   const mealsList2 = meals.map((meal) => {
+    
     let obj = {
       ...meal,
-      price: Math.floor(Math.random() * 100) + Math.random() * 100,
+      price: priceArray[k],
     };
+    k++;
     return obj;
   })
 

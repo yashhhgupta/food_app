@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBFooter, MDBContainer, MDBCol, MDBRow } from "mdb-react-ui-kit";
+import { MDBFooter, MDBContainer} from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
 
 import classes from "./Footer.module.css";

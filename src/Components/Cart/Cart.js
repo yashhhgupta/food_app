@@ -4,6 +4,7 @@ import {useContext,useState} from 'react';
 import CartContext from "../../store/cart-context";
 import CartItem from "./CartItem";
 import OrderMessage from "./OrderMessage";
+import { Link } from "react-router-dom";
 const Cart = (props) => {
   const [orderPlaced, setOrderPlaced] = useState(false);
   const cartCtx = useContext(CartContext);
@@ -23,6 +24,7 @@ const Cart = (props) => {
           key={item.id}
           name={item.name}
           amount={item.amount}
+          image={item.image}
           price={item.price}
           onRemove={cartItemRemoveHandler.bind(null, item.id)}
           onAdd={cartItemAddHandler.bind(null, item)}
@@ -60,7 +62,15 @@ const Cart = (props) => {
             {!hasItems && (
               <div className={classes.body} style={{ textAlign: "center" }}>
                 <h1>Your Cart is empty</h1>
-                <h1>Add items to place an order</h1>
+                <h1>
+                  <Link
+                    style={{ textDecoration: "none", color: "#8a2b06" }}
+                    to="/meals"
+                  >
+                    Add items
+                  </Link>{" "}
+                  to place an order
+                </h1>
               </div>
             )}
           </Card>

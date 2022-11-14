@@ -13,6 +13,7 @@ const MealItem = (props) => {
     cartCtx.addItem({
       id: props.id,
       name: props.name,
+      image: props.image,
       amount: amount,
       price: props.price,
     });
@@ -23,9 +24,9 @@ const MealItem = (props) => {
   return (
     <li className={classes.meal}>
       <div style={{ padding: "1rem" }}>
-        <img src={props.image} width="170"></img>
+        <img src={props.image} width="170" alt="Meal"></img>
       </div>
-      <div >
+      <div>
         <h3>{props.name}</h3>
         {/* {console.log(props.id)} */}
         <div className={classes.price}>{price}</div>

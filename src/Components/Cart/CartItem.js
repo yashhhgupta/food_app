@@ -6,7 +6,16 @@ const CartItem = (props) => {
   return (
     <li className={classes["cart-item"]}>
       <div>
-        <h2>{props.name}</h2>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img
+            src={props.image}
+            alt="Meal"
+            style={{ margin: "1rem" }}
+            width="60"
+          ></img>{" "}
+          <h2>{props.name}</h2>
+        </div>
+
         <div className={classes.summary}>
           <span className={classes.price}>{price}</span>
           <span className={classes.amount}>x {props.amount}</span>
