@@ -1,6 +1,6 @@
 # Food delivery app using React
-###`Yash Gupta`
-###`S20200010234`
+`Yash Gupta`
+`S20200010234`
 
 
 Download the project from the github repository and open terminal in the project folder, then run the following commands 
